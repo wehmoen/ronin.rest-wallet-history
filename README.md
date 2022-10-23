@@ -2,6 +2,11 @@
 
 This serves as the backend api for the ronin.rest wallet history api.
 
+## Requirements
+
+1. MongoDB running at 127.0.0.1:27017
+2. Ronin HTTP RPC running at 127.0.0.1:8545
+
 ## Setup
 
 ```
