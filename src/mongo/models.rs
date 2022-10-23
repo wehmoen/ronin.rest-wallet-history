@@ -20,6 +20,7 @@ impl From<Value> for WalletHistory {
     }
 }
 
+#[allow(clippy::from_over_into)]
 impl Into<Value> for WalletHistory {
     fn into(self) -> Value {
         serde_json::from_str::<Value>(&serde_json::to_string(&self).unwrap()).unwrap()
